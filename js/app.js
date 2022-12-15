@@ -43,7 +43,7 @@ lightMode.addEventListener('click', ()=>  {
 //live code
 document.getElementById('live').onclick = function(){
     if(this.checked){
-        editor.addEventListener("keyup", ()=>{
+        editor.addEventListener("keydown", ()=>{
             const html = editor.textContent;
             iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
         })
